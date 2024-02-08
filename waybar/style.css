@@ -45,9 +45,10 @@ tooltip,
   padding: 0 4px;
 }
 
-tooltip, #tray menu {
-    margin: 8px 12px;
-    padding: 8px 12px;
+tooltip,
+#tray menu {
+  margin: 8px 12px;
+  padding: 8px 12px;
 }
 
 .modules-center {
@@ -76,20 +77,22 @@ tooltip,
 }
 
 #tray menu > * {
-    transition: opacity 200ms ease-in, color 200ms ease-in;
+  transition:
+    opacity 200ms ease-in,
+    color 200ms ease-in;
 }
 
 #tray menu > * > * {
-    transition: inherit;
+  transition: inherit;
 }
 
 #tray menu > *:hover {
-    opacity: 0.8;
-    color: @light-blue;
+  opacity: 0.8;
+  color: @light-blue;
 }
 
 #tray menu > *:hover > * {
-    color: @light-blue;
+  color: @light-blue;
 }
 
 #workspaces button {
