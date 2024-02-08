@@ -16,6 +16,7 @@
     "idle_inhibitor",
     "cava",
     "pulseaudio",
+    "custom/night_light",
     "network",
     "battery",
     "hyprland/language",
@@ -195,6 +196,13 @@
     "exec": "~/.config/waybar/scripts/dunst.sh",
     "on-click": "dunstctl set-paused toggle",
     "restart-interval": 1
+  },
+  "custom/night_light": {
+    "exec": "~/.config/waybar/scripts/night_light.sh",
+    "on-click": "~/.config/hypr/scripts/night_light.sh",
+    "on-scroll-up": "~/.config/hypr/scripts/night_light.sh --inc",
+    "on-scroll-down": "~/.config/hypr/scripts/night_light.sh --dec",
+    "interval": 1
   },
   "image#system_logo": {
     "path": "/home/dkostmii/.config/waybar/icons/archlinux_logo_nomargin.png",
