@@ -59,7 +59,8 @@
       "(.*)tmux(.*)": " [$1]",
       "(.*) SoundCloud(.*)": "󰓀 $1",
       "(.*) - Visual Studio Code": "󰨞 $1"
-    }
+    },
+    "max-length": 40
   },
   "hyprland/workspaces": {
     "show-special": true,
