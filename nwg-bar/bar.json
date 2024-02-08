@@ -1,0 +1,22 @@
+[
+ {
+   "label": "Lock",
+   "exec": "swaylock",
+   "icon": "/usr/share/nwg-bar/images/system-lock-screen.svg"
+ },
+ {
+   "label": "Sleep",
+   "exec": "systemctl suspend",
+   "icon": "/usr/share/nwg-bar/images/system-suspend.svg"
+ },
+ {
+   "label": "Reboot",
+   "exec": "systemctl reboot",
+   "icon": "/usr/share/nwg-bar/images/system-reboot.svg"
+ },
+ {
+   "label": "Shutdown",
+   "exec": "systemctl poweroff",
+   "icon": "/usr/share/nwg-bar/images/system-shutdown.svg"
+ }
+]
