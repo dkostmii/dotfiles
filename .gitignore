@@ -1,0 +1,49 @@
+/*
+!README.md
+!.gitignore
+
+# btop
+!btop/btop.conf
+
+# cava
+!cava/
+
+# dunst
+!dunst/
+
+# fish
+!fish/
+
+# hyfetch
+!hyfetch.json
+
+# Hyprland & Co.
+!hypr/
+
+# lazygit
+!lazygit/config.yml
+
+# mpv
+!mpv/
+
+# nushell
+!nushell/config.nu
+!nushell/env.nu
+
+# NeoVim (NVIM_APPNAME=nvim-vscode)
+!nvim-vscode/
+
+# nwg-bar
+!nwg-bar/
+
+# qt5ct
+!qt5ct/
+
+# swaylock-effects
+!swaylock/
+
+# tofi
+!tofi/
+
+# Waybar
+!waybar/
