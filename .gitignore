@@ -2,6 +2,9 @@
 !README.md
 !.gitignore
 
+# alacritty
+!alacritty/
+
 # btop
 !btop/btop.conf
 
