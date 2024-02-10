@@ -83,7 +83,8 @@
   },
   "hyprland/language": {
     "format-en": "🇺🇸",
-    "format-uk": "🇺🇦"
+    "format-uk": "🇺🇦",
+    "on-click": "~/.config/waybar/scripts/next_language.sh"
   },
   "battery": {
     "states": {
