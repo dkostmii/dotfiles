@@ -1,0 +1,134 @@
+@define-color bg rgba(34, 36, 54, 1);
+@define-color fg #FFF;
+@define-color dark #1e2030;
+
+@define-color light-blue #82aaff;
+@define-color green #82bf1f;
+@define-color red #d12642;
+@define-color transparent rgba(0, 0, 0, 0);
+
+* {
+  all: initial;
+  background: none;
+  color: @fg;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Symbols Nerd Font Mono", "Andika", Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+}
+
+window#waybar,
+tooltip {
+  border-radius: 4px;
+}
+
+window#waybar * {
+  border-radius: inherit;
+}
+
+.modules-center,
+tooltip,
+#tray menu {
+  background: @bg;
+}
+
+tooltip,
+#tray menu {
+  margin: 8px 12px;
+  padding: 8px 12px;
+}
+
+window#waybar.empty {
+  background: @transparent;
+}
+
+.modules-center {
+  padding-right: 8px;
+}
+
+.modules-center,
+tooltip,
+#tray menu {
+  border: 1px solid @light-blue;
+}
+
+#tray menu > *:hover {
+  opacity: 0.8;
+  color: @light-blue;
+}
+
+#tray menu > *:hover > * {
+  color: @light-blue;
+}
+
+#workspaces {
+  background: @light-blue;
+}
+
+#workspaces button {
+  padding: 0 8px;
+}
+
+#workspaces button,
+#workspaces button label {
+  color: @dark;
+}
+
+#workspaces > :not(:first-child):not(:last-child),
+#workspaces > :not(:first-child):not(:last-child) > button {
+  border-radius: 0;
+}
+
+#workspaces > :first-child,
+#workspaces > :first-child > button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#workspaces > :last-child,
+#workspaces > :last-child > button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#workspaces button.active,
+#workspaces button.urgent,
+#workspaces button:hover {
+  background: @bg;
+}
+
+#workspaces button.active,
+#workspaces button.active label {
+  color: @light-blue;
+}
+
+#workspaces button:hover,
+#workspaces button:hover label {
+  color: @green;
+}
+
+#workspaces button.urgent,
+#workspaces button.urgent label {
+  color: @red;
+}
+
+#idle_inhibitor {
+  padding: 0 8px;
+  border-radius: 0;
+}
+
+:first-child > #idle_inhibitor {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+:last-child > #idle_inhibitor {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#idle_inhibitor.activated {
+  background: @light-blue;
+  color: @dark;
+}
