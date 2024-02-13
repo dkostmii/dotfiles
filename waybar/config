@@ -109,7 +109,9 @@
     "format-icons": {
       "activated": "󰈉",
       "deactivated": "󰈈"
-    }
+    },
+    "tooltip-format-activated": "{icon} Idle inhibitor {status}.",
+    "tooltip-format-deactivated": "{icon} Idle inhibitor {status}."
   },
   "network": {
     "interface": "wlan0",
