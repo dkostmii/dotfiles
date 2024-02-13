@@ -1,7 +1,12 @@
 # dotfiles
 
 This repository contains dotfiles for my common tools.
-The documentation coming soon.
+
+## Documentation index
+
+| Module                     |
+| -------------------------- |
+| [Waybar](waybar/README.md) |
 
 ## Installation
 
