@@ -23,11 +23,9 @@ BPurple='\033[1;35m'      # Purple
 BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
-dwm_repo_dir="$HOME/Repos/AUR/dwm"
+dwm_repo_dir="$HOME/Repos/Custom/dwm"
 dwm_version="6.4"
 
 cp -f ./config.h "$dwm_repo_dir/config.h"
-cp -f ./config.h "$dwm_repo_dir/src/config.h"
-cp -f ./config.h "$dwm_repo_dir/src/dwm-$dwm_version/config.h"
 
-printf 'Run \n\n%s%scd %s && makepkg -efi%s%s\n\nto build dwm.\n' $Cyan $(tput bold) $dwm_repo_dir $Color_Off
+printf 'Run \n\n%s%scd %s && make && sudo make install%s%s\n\nto build dwm.\n' $Cyan $(tput bold) $dwm_repo_dir $Color_Off
