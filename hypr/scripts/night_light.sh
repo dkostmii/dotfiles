@@ -12,6 +12,14 @@ else
 	temperature=$(cat $temperature_file)
 fi
 
+restore() {
+	state_file=$1
+	temperature=$2
+	if [ -f $state_file ]; then
+		(wlsunset -t $temperature -T $(($temperature + 2500)) &> /dev/null) &
+	fi
+}
+
 enable() {
 	state_file=$1
 	temperature=$2
@@ -60,6 +68,8 @@ elif [[ $1 == "--inc" ]]; then
 		update_temperature $(($temperature + $STEP))
 		restart $state_file $temperature
 	fi
+elif [[ $1 == "--restore" ]]; then
+	restore $state_file $temperature
 else
 	toggle $state_file $temperature
 fi
