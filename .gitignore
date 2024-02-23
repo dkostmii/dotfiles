@@ -5,6 +5,10 @@
 # alacritty
 !alacritty/
 
+# blugon
+!blugon/
+blugon/current
+
 # btop
 !btop/btop.conf
 
@@ -23,11 +27,20 @@
 # fish
 !fish/
 
+# foot
+!foot/
+
 # hyfetch
 !hyfetch.json
 
 # Hyprland & Co.
 !hypr/
+
+# i3
+!i3/
+
+# i3status
+!i3status/
 
 # kitty
 !kitty/
