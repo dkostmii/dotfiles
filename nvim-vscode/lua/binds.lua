@@ -29,5 +29,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", {
 if vim.g.vscode then
   vim.keymap.set("n", "<leader>q", function()
     require("vscode-neovim").call("workbench.action.closeUnmodifiedEditors")
-  end, { desc = "Close", noremap = true })
+  end, { desc = "Closes all saved tabs in the current pane (which closes the pane)", noremap = true })
 end
