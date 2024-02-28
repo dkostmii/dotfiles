@@ -67,5 +67,8 @@ blugon/current
 # tofi
 !tofi/
 
+# Vimium C
+!vimium_c.json
+
 # Waybar
 !waybar/
