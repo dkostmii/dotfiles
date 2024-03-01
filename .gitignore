@@ -55,6 +55,9 @@ blugon/current
 # nwg-bar
 !nwg-bar/
 
+# Sway
+!sway/
+
 # swaylock-effects
 !swaylock/
 
