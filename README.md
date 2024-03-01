@@ -18,7 +18,7 @@ This repository contains dotfiles for my common tools.
     Install dependencies from Arch Linux Packages:
 
     ```bash
-    pacman -S alacritty brightnessctl cava felix dunst fish foot hyfetch hyprland hyprpaper i3 kitty lib32-pipewire mpv neovim pamixer pavucontrol pipewire pipewire-audio pipewire-pulse polkit-kde-agent qt5-wayland qt5ct qt6-wayland swayidle wireplumber wlsunset xdg-desktop-portal-hyprland zoxide
+    pacman -S alacritty brightnessctl cava dunst felix fish foot hyfetch hyprland hyprpaper i3 kitty lib32-pipewire mpv neovim pamixer pavucontrol pipewire pipewire-audio pipewire-pulse polkit-kde-agent qt5-wayland qt5ct qt6-wayland rofi rofimoji sway swaybg swayidle wireplumber wlsunset xdg-desktop-portal-hyprland zoxide
     ```
 
     `pipewire-pulse` is used as a replacement for `pulseaudio`.
