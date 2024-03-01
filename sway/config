@@ -39,11 +39,13 @@ exec --no-startup-id dex --autostart --environment sway
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
+bindsym $mod+Escape exec nwg-bar
+
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id ~/.config/hypr/scripts/sleep.sh
+exec --no-startup-id ~/.config/sway/scripts/sleep.sh
 
-bindsym $mod+z exec swaylock
+bindsym $mod+z exec loginctl lock-session
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -251,3 +253,5 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 # exec i3-config-wizard
+
+include /etc/sway/config.d/*
