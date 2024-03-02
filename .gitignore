@@ -15,6 +15,9 @@ blugon/current
 # cava
 !cava/
 
+# VS Code
+!Default.code-profile
+
 # dunst
 !dunst/
 
