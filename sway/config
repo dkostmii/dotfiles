@@ -45,6 +45,8 @@ bindsym $mod+Escape exec nwg-bar
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id ~/.config/sway/scripts/sleep.sh
 
+exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
+
 bindsym $mod+z exec loginctl lock-session
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
