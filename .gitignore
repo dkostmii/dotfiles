@@ -58,6 +58,10 @@ blugon/current
 # nwg-bar
 !nwg-bar/
 
+# rofi
+
+!rofi/
+
 # Sway
 !sway/
 
