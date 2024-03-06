@@ -1,18 +1,9 @@
 {
-  "layer": "top",
+  "position": "bottom",
   "spacing": 8,
-  "margin-top": 4,
-  "margin-left": 4,
-  "margin-right": 4,
-  "height": 32,
-  "modules-left": [
-    "image#system_logo",
-    "hyprland/workspaces"
-  ],
+  "height": 24,
   "modules-center": [
-    "hyprland/window"
-  ],
-  "modules-right": [
+    "hyprland/workspaces",
     "idle_inhibitor",
     "cava",
     "pulseaudio",
@@ -51,27 +42,8 @@
       "on-scroll-down": "shift_down"
     }
   },
-  "hyprland/window": {
-    "rewrite": {
-      "(.*) — Mozilla Firefox": "󰈹 $1",
-      "(.*) - YouTube(.*)": "󰗃 $1",
-      "(.*) YouTube(.*)": "󰗃 $1",
-      "(.*)tmux(.*)": " [$1]",
-      "(.*) SoundCloud(.*)": "󰓀 $1",
-      "(.*) - Visual Studio Code": "󰨞 $1"
-    },
-    "max-length": 40
-  },
   "hyprland/workspaces": {
     "show-special": true,
-    "persistent-workspaces": {
-      "Fun": "",
-      "Web": "",
-      "Dev": "",
-      "Office": "",
-      "1": "",
-      "2": ""
-    },
     "format": "{icon}",
     "format-icons": {
       "Dev": "󰨞",
@@ -115,8 +87,8 @@
   },
   "network": {
     "interface": "wlan0",
-    "format": "{ifname}",
-    "format-wifi": "{icon}",
+    "format": "{ifname} {bandwidthDownBytes}󰜮 {bandwidthUpBytes}󰜷",
+    "format-wifi": "{icon} {bandwidthDownBytes}󰜮 {bandwidthUpBytes}󰜷",
     "format-icons": [
       "󰤯",
       "󰤟",
@@ -127,9 +99,9 @@
     "format-ethernet": "󰖟",
     "format-linked": "",
     "format-disconnected": "",
-    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) {icon}",
-    "tooltip-format-ethernet": "{ifname} 󰖟",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗 – {bandwidthDownBytes}󰜮 {bandwidthUpBytes}󰜷",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) {icon} – {bandwidthDownBytes}󰜮 {bandwidthUpBytes}󰜷",
+    "tooltip-format-ethernet": "{ifname} 󰖟 – {bandwidthDownBytes}󰜮 {bandwidthUpBytes}󰜷",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
   },
@@ -207,9 +179,5 @@
     "on-scroll-up": "~/.config/hypr/scripts/night_light.sh --inc",
     "on-scroll-down": "~/.config/hypr/scripts/night_light.sh --dec",
     "interval": 1
-  },
-  "image#system_logo": {
-    "path": "/home/dkostmii/.config/waybar/icons/archlinux_logo_nomargin.png",
-    "size": 61
   }
 }

@@ -16,26 +16,15 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Symbols Nerd Font Mono", "Andika", Helvetica, Arial, sans-serif;
-  font-size: 10pt;
-}
-
-window#waybar,
-tooltip {
-  border-radius: 4px;
+  font-family: "Symbols Nerd Font Mono", "Unifont", monospace;
+  font-size: 16px;
 }
 
 window#waybar * {
   border-radius: inherit;
 }
 
-.modules-left {
-  padding-left: 8px;
-}
-
-.modules-left,
 .modules-center,
-.modules-right,
 tooltip,
 #tray menu {
   background: @bg-transparent;
@@ -53,24 +42,18 @@ tooltip,
 }
 
 .modules-center {
-  background: @light-blue-transparent;
-  color: @dark;
+  background: @bg-transparent;
+  color: @fg;
 }
 
 .modules-center * {
-  color: @dark;
+  color: @fg;
 }
 
 window#waybar.empty .modules-center {
   background: @transparent;
 }
 
-.modules-right {
-  padding-right: 8px;
-}
-
-.modules-left,
-.modules-right,
 tooltip,
 #tray menu {
   transition: border-color 200ms ease-in;
@@ -99,56 +82,32 @@ tooltip,
 #workspaces button {
   padding: 0 8px;
   transition: all 100ms ease-in;
+  background: @light-blue-transparent;
 }
 
-#workspaces > :not(:first-child):not(:last-child),
-#workspaces > :not(:first-child):not(:last-child) > button {
-  border-radius: 0;
-}
-
-#workspaces > :first-child,
-#workspaces > :first-child > button {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-#workspaces > :last-child,
-#workspaces > :last-child > button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-#workspaces button.active {
-  background: @light-blue;
-  color: @dark;
-}
-
-#workspaces button.active label,
-#workspaces button:hover label {
-  color: @dark;
-}
-
-#workspaces button.urgent {
-  background: @red;
-}
-
+#workspaces button.active,
+#workspaces button.urgent,
 #workspaces button:hover {
-  background: @green;
+  background: @bg-transparent;
+}
+
+#workspaces button.active,
+#workspaces button.active label {
+  color: @light-blue;
+}
+
+#workspaces button.urgent,
+#workspaces button.urgent label {
+  color: @red;
+}
+
+#workspaces button:hover,
+#workspaces button:hover label {
+  color: @green;
 }
 
 #idle_inhibitor {
   padding: 0 8px;
-  border-radius: 0;
-}
-
-:first-child > #idle_inhibitor {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-:last-child > #idle_inhibitor {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 #idle_inhibitor.activated {
@@ -157,7 +116,6 @@ tooltip,
 }
 
 #cava {
-  font-size: 11pt;
   min-height: 24px;
   min-width: 108px;
   color: @light-blue;
