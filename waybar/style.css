@@ -33,6 +33,7 @@ tooltip,
 .modules-center {
   margin: 0 4px;
   padding: 0 4px;
+  padding-left: 0;
 }
 
 tooltip,
@@ -88,7 +89,7 @@ tooltip,
 #workspaces button.active,
 #workspaces button.urgent,
 #workspaces button:hover {
-  background: @bg-transparent;
+  background: @transparent;
 }
 
 #workspaces button.active,
