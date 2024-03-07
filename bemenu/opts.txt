@@ -1,0 +1,1 @@
+--nb #222436A8 --tb #222436A8 --fb #222436A8 --sf #222436 --sb #82aaffA8  --hf #222436 --hb #82aaffA8 --tf #82aaff --ab #222436A8 --nf #c8d3f5 --af #c8d3f5 --bdr #82aaff --fn 'Unifont 16px'
