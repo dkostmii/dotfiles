@@ -2,12 +2,8 @@
 !README.md
 !.gitignore
 
-# alacritty
-!alacritty/
-
-# blugon
-!blugon/
-blugon/current
+# bemenu
+!bemenu/
 
 # btop
 !btop/btop.conf
@@ -24,20 +20,11 @@ blugon/current
 # fish
 !fish/
 
-# foot
-!foot/
-
 # hyfetch
 !hyfetch.json
 
 # Hyprland & Co.
 !hypr/
-
-# i3
-!i3/
-
-# i3status
-!i3status/
 
 # kitty
 !kitty/
@@ -57,13 +44,6 @@ blugon/current
 
 # nwg-bar
 !nwg-bar/
-
-# rofi
-
-!rofi/
-
-# Sway
-!sway/
 
 # swaylock-effects
 !swaylock/
