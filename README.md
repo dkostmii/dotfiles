@@ -7,6 +7,7 @@ This repository contains dotfiles for my common tools.
 | Module                     |
 | -------------------------- |
 | [Waybar](waybar/README.md) |
+| [Bemenu](bemenu/README.md) |
 
 ## Installation
 
@@ -18,7 +19,7 @@ This repository contains dotfiles for my common tools.
     Install dependencies from Arch Linux Packages:
 
     ```bash
-    pacman -S bemenu brightnessctl cava dunst felix fish hyfetch hyprland hyprpaper kitty lib32-pipewire mpv neovim pamixer pavucontrol pipewire pipewire-audio pipewire-pulse polkit-kde-agent qt5-wayland qt6-wayland swayidle wireplumber wlsunset xdg-desktop-portal-hyprland zoxide
+    pacman -S bemenu-wayland brightnessctl cava dunst felix fish hyfetch hyprland hyprpaper kitty lib32-pipewire mpv neovim pamixer pavucontrol pipewire pipewire-audio pipewire-pulse polkit-kde-agent qt5-wayland qt6-wayland swayidle wireplumber wlsunset xdg-desktop-portal-hyprland zoxide
     ```
 
     `pipewire-pulse` is used as a replacement for `pulseaudio`.
@@ -33,7 +34,7 @@ This repository contains dotfiles for my common tools.
     > Assuming the removal of existing packages.
 
     ```bash
-    yay -S bemoji cava gojq hyprshot libcava nwg-bar-bin swaylock-effects waybar-cava
+    yay -S bemoji cava gojq hyprshot libcava nwg-bar-bin swaylock-effects tofi waybar-cava
     ```
 
 2. Fork this repository.
