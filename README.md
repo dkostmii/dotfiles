@@ -14,12 +14,12 @@ This repository contains dotfiles for my common tools.
 > **Note**
 > This config is only tested on Arch Linux.
 
-1. Install config dependencies:
+1.  Install config dependencies:
 
     Install dependencies from Arch Linux Packages:
 
     ```bash
-    pacman -S bemenu-wayland brightnessctl cava dunst felix fish hyfetch hyprland hyprpaper kitty lib32-pipewire mpv neovim pamixer pavucontrol pipewire pipewire-audio pipewire-pulse polkit-kde-agent qt5-wayland qt6-wayland swayidle wireplumber wlsunset xdg-desktop-portal-hyprland zoxide
+    pacman -S bemenu-wayland brightnessctl cava dunst felix fish hyfetch hyprland kitty lib32-pipewire mpv neovim pamixer pavucontrol pipewire pipewire-audio pipewire-pulse polkit-kde-agent qt5-wayland qt6-wayland swayidle wireplumber wlsunset xdg-desktop-portal-hyprland zoxide
     ```
 
     `pipewire-pulse` is used as a replacement for `pulseaudio`.
@@ -34,20 +34,20 @@ This repository contains dotfiles for my common tools.
     > Assuming the removal of existing packages.
 
     ```bash
-    yay -S bemoji cava gojq hyprshot libcava nwg-bar-bin swaylock-effects tofi waybar-cava
+    yay -S bemoji cava gojq hyprshot libcava nwg-bar-bin swaylock-effects tofi waybar-cava wbg
     ```
 
-2. Fork this repository.
+2.  Fork this repository.
 
     > You can skip this step, if it's throw-away setup.
 
-3. Clone forked repository into your `~/.config` dir.
-Example for this repository is shown:
+3.  Clone forked repository into your `~/.config` dir.
+    Example for this repository is shown:
 
-    ```bash
-    git clone https://github.com/dkostmii/dotfiles.git ~/.config
-    ```
+        ```bash
+        git clone https://github.com/dkostmii/dotfiles.git ~/.config
+        ```
 
-4. Logout from your current DE or WM and log in to Hyprland.
+4.  Logout from your current DE or WM and log in to Hyprland.
 
 And you're all set! Customize this configuration to suit your needs.
