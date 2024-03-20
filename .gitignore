@@ -6,6 +6,8 @@
 !bemenu/
 
 # btop
+!btop/
+btop/*
 !btop/btop.conf
 
 # cava
@@ -30,12 +32,16 @@
 !kitty/
 
 # lazygit
+!lazygit/
+lazygit/*
 !lazygit/config.yml
 
 # mpv
 !mpv/
 
 # nushell
+!nushell/
+nushell/*
 !nushell/config.nu
 !nushell/env.nu
 
@@ -50,6 +56,11 @@
 
 # tofi
 !tofi/
+
+# tree-sitter
+!tree-sitter/
+tree-sitter/*
+!tree-sitter/config.json
 
 # Vimium C
 !vimium_c.json

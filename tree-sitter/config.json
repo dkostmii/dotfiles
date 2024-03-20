@@ -1,0 +1,60 @@
+{
+  "parser-directories": [
+    "/home/dkostmii/github",
+    "/home/dkostmii/src",
+    "/home/dkostmii/source",
+    "/home/dkostmii/projects",
+    "/home/dkostmii/Projects",
+    "/home/dkostmii/dev",
+    "/home/dkostmii/git"
+  ],
+  "theme": {
+    "property": 124,
+    "punctuation.bracket": 239,
+    "function": 26,
+    "string.special": 30,
+    "string": 28,
+    "type": 23,
+    "variable.parameter": {
+      "underline": true
+    },
+    "tag": 18,
+    "variable.builtin": {
+      "bold": true
+    },
+    "number": {
+      "bold": true,
+      "color": 94
+    },
+    "operator": {
+      "color": 239,
+      "bold": true
+    },
+    "punctuation.delimiter": 239,
+    "constant.builtin": {
+      "color": 94,
+      "bold": true
+    },
+    "constant": 94,
+    "constructor": 136,
+    "function.builtin": {
+      "bold": true,
+      "color": 26
+    },
+    "comment": {
+      "italic": true,
+      "color": 245
+    },
+    "embedded": null,
+    "keyword": 56,
+    "module": 136,
+    "type.builtin": {
+      "color": 23,
+      "bold": true
+    },
+    "attribute": {
+      "color": 124,
+      "italic": true
+    }
+  }
+}
