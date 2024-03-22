@@ -16,7 +16,7 @@ restore() {
 	state_file=$1
 	temperature=$2
 	if [ -f $state_file ]; then
-		(wlsunset -t $temperature -T $(($temperature + 2500)) &> /dev/null) &
+		(gammastep -P -O $temperature &> /dev/null) &
 	fi
 }
 
@@ -24,12 +24,12 @@ enable() {
 	state_file=$1
 	temperature=$2
 	touch $state_file
-	(wlsunset -t $temperature -T $(($temperature + 2500)) &> /dev/null) &
+	(gammastep -P -O $temperature &> /dev/null) &
 }
 
 disable() {
 	rm $state_file
-	killall wlsunset
+	killall gammastep
 }
 
 toggle() {
