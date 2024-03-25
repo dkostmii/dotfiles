@@ -1,14 +1,15 @@
 {
 	"name": "Vimium C",
-	"@time": "2/28/2024, 4:19:13 PM",
-	"time": 1709129953038,
+	"@time": "3/25/2024, 12:31:51 PM",
+	"time": 1711362711954,
 	"environment": {
 		"extension": "1.99.997",
 		"platform": "linux",
-		"firefox": 122
+		"firefox": 124
 	},
 	"keyLayout": 1,
-	"scrollStepSize": 300,
+	"keyupTime": 50,
+	"scrollStepSize": 40,
 	"searchEngines": [
 		"bi: https://cn.bing.com/search?q=$s",
 		"bi|bing: https://www.bing.com/search?q=%s \\",
